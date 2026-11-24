@@ -13,14 +13,19 @@
 
 <body>
 
-    
+
     <nav class="boder display-flex alineitme-center">
         <a href=""><img src="asstes/spotify_logo.svg" alt=""></a>
 
         <div class="boder display-flex gap-10">
 
-            <div class="icon"><img src="asstes/home.svg" alt=""></div>
-            <div class="search boder font-black display-flex alineitme-center justfy-center">search</div>
+            <div class="icon light_black round alineitme-center display-flex justfy-center"><img src="asstes/home.svg"
+                    alt=""></div>
+
+
+
+            <input type="text" id="search" placeholder="search"
+                class="search boder  display-flex alineitme-center light_black justfy-center font-white">
         </div>
 
 
@@ -28,19 +33,35 @@
 
         <div class="more display-flex gap-10 boder">
 
-            <button>log in</button>
-            <button>Sing in</button>
+            <button class="justfy-center alineitme-center display-flex button font-white black">Sing in</button>
+            <button class="justfy-center alineitme-center display-flex button green ">log in</button>
 
         </div>
     </nav>
 
     <main class="display-flex">
 
+
+
         <aside class="left boder">
 
-            <div class="home"></div>
-            <div class="Library"></div>
+            <div class="Home boder">
+                <div class="logo boder">
+                    <ul>
+                        <li class="boder"><img src="asstes/home.svg" alt="Home">Home</li>
+                        <li class="boder"><img src="asstes/search.svg" alt="search">search</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="Library">
+
+                
+            </div>
         </aside>
+
+
 
         <main class="right boder"></main>
 
