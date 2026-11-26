@@ -36,9 +36,9 @@ body {
 
 }
 
-.boder {
+/* .boder {
     border: 2px solid pink;
-}
+} */
 
 .light_black {
     background-color: #252424;
@@ -135,7 +135,7 @@ main {
 .Home {
     background-color: #121212;
     border-radius: 6px;
-    padding: 4px;
+    padding: 8px;
 }
 
 .Home .logo ul {
@@ -168,7 +168,14 @@ main {
 
     background-color: #121212;
     border-radius: 6px;
-    padding: 4px;
+    padding: 6px;
+    min-height: 70%;
+    display: flex;
+   justify-content: center;
+}
+.Library .logo{
+    width: 100%;
+    margin: 10px;
 }
 
 .Library .logo ul {
@@ -193,6 +200,19 @@ main {
 }
 
 .Library .logo ul li img {
-    height: 25px;
+    height: 35px;
 
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 10px;
+    
+}
+
+footer div a{
+    color: #535353;
 }
