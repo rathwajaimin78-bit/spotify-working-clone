@@ -169,13 +169,15 @@ main {
     background-color: #121212;
     border-radius: 6px;
     padding: 6px;
-    min-height: 70%;
+    min-height: 75%;
     display: flex;
-   justify-content: center;
+    flex-direction: column;
+   
 }
 .Library .logo{
     width: 100%;
     margin: 10px;
+    height: fit-content;
 }
 
 .Library .logo ul {
@@ -215,4 +217,14 @@ footer{
 
 footer div a{
     color: #535353;
+}
+
+
+
+
+
+
+.control{
+    color: #535353;
+    height: 4vh;
 }
