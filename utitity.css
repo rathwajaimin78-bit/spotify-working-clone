@@ -1,0 +1,50 @@
+
+/* .boder {
+    border: 1px solid pink;
+} */
+
+
+
+.display-flex {
+    display: flex;
+}
+
+.alineitme-center {
+    align-items: center;
+}
+
+.justfy-center {
+    justify-content: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.font-black {
+    color: black;
+}
+
+.font-white {
+    color: white;
+}
+
+.light_black {
+    background-color: #252424;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.green {
+    background-color: rgb(34, 207, 34);
+}
+
+.black {
+    background-color: black;
+}
+
+.invert {
+    filter: invert(1);
+}

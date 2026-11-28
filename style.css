@@ -9,29 +9,6 @@
 }
 
 
-.display-flex {
-    display: flex;
-}
-
-.alineitme-center {
-    align-items: center;
-}
-
-.justfy-center {
-    justify-content: center;
-}
-
-.gap-10 {
-    gap: 10px;
-}
-
-.font-black {
-    color: black;
-}
-
-.font-white {
-    color: white;
-}
 
 body {
     background-color: black;
@@ -39,33 +16,10 @@ body {
 
 }
 
-/* .boder {
-    border: 1px solid pink;
-} */
-
-.light_black {
-    background-color: #252424;
-}
-
-.round {
-    border-radius: 100%;
-}
-
-.green {
-    background-color: rgb(34, 207, 34);
-}
-
-.black {
-    background-color: black;
-}
-
-.invert {
-    filter: invert(1);
-}
 
 
 
-/* #1f1f1f */
+
 nav {
     box-sizing: border-box;
     width: 100vw;
@@ -92,9 +46,10 @@ nav img {
 
 .search {
     width: 35vh;
-    border-radius: 27px;
+    border-radius: 27rem;
     padding: 10px;
-    /* border-color: white; */
+    box-shadow: none;
+
     border: none;
 
 }
@@ -105,6 +60,8 @@ main {
     gap: 10px;
     font-weight: 550;
     font-family: sans-serif;
+
+    
 }
 
 
@@ -121,19 +78,21 @@ main {
 
 .right {
     width: 75vw;
-    height: 100vh;
+    height: 90vh;
     background-color: #0a0a0a;
     margin-top: 10px;
     margin-right: 10px;
 
-    overflow: scroll;
+    position: relative;
+   
 }
 
 .button {
-    width: 5vw;
-    height: 4vh;
+    width: 50%;
+    height: 90%;
     border-radius: 40px;
     border: none;
+    outline: none;
     cursor: pointer;
 
     font-size: 16px;
@@ -141,6 +100,26 @@ main {
 
 
 }
+
+.more {
+    height: 4vh;
+    width: 20vh;
+    padding: 10px;
+}
+
+.singin {
+    color: rgb(232, 232, 232);
+}
+
+
+
+.more :hover {
+font-size: 1.1rem;
+    opacity: 0.9;
+
+}
+
+
 
 
 .Home {
@@ -264,31 +243,37 @@ footer div a {
 }
 
 .list {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
     padding: 10px;
+    max-height: 70vh;
+
+    overflow-y: scroll;
 }
 
 .song_card {
 
+    position: relative;
 
-    padding: 18px 10px;
-    background-color: #252525;
+    padding: 18px 10px 18px 10px;
+    /* background-color: #252525; */
     border-radius: 8px;
 
+}
+
+
+.list :hover {
+    background-color: #1c1c1c;
 }
 
 .song_card img {
     border-radius: 8px;
     height: 220px;
     width: 220px;
-}
-
-
-.song_card :hover{
-    background-color: #1c1c1c;
 }
 
 .info {
@@ -310,4 +295,47 @@ footer div a {
     font-family: sans-serif;
     font-weight: 500;
     color: #aaa8a8;
+}
+
+
+.play {
+    background-color: #22cf22;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom: 44px;
+    /*to 90px*/
+    right: 20px;
+
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+
+}
+
+.play :hover {
+    opacity: 1;
+    bottom: 90px;
+}
+
+.play img {
+    width: 28px;
+}
+
+
+.playbar{
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 6vh;
+
+    background-color: #535353;
 }

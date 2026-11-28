@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spotify</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utitity.css">
 
 
 
@@ -33,8 +34,8 @@
 
         <div class="more display-flex gap-10 boder">
 
-            <button class="justfy-center alineitme-center display-flex button font-white black">Sing in</button>
-            <button class="justfy-center alineitme-center display-flex button green ">log in</button>
+            <button class="justfy-center alineitme-center display-flex button  black singin">Sing up</button>
+            <button class="justfy-center alineitme-center display-flex button green login ">log in</button>
 
         </div>
     </nav>
@@ -95,12 +96,15 @@
 
 
             <div class="spofifyplaylist">
-                <h1>spofify playlist </h1>
+                <h1>spofity playlist </h1>
 
                 <div class="list">
 
                     <div class="song_card boder">
+
+
                         <img src="asstes/playlist-img.webp" alt="">
+                        <div class="play " hidden><img src="asstes/play.svg" alt=""></div>
 
                         <div class="info">
 
@@ -119,15 +123,21 @@
                         </div>
                     </div>
 
+
+                    <!-- list end -->
 
                 </div>
 
             </div>
 
+            <div class="playbar"> playbar</div>
         </div>
 
 
+
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
